@@ -14,7 +14,7 @@
                     "body": {
                         "To": "maelzaye@microsoft.com",
                         "Subject": "From Logic Apps",
-                        "Body": "<p>test</p>"
+                        "Body": "<p>My first test from azure</p>"
                     },
                     "path": "/v2/Mail"
                 },
