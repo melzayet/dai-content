@@ -13,6 +13,20 @@
         "scheme": "Key",
         "parameter": "@appsetting('outlook-connectionKey')"
       }
+    },
+    "github": {
+      "api": {
+        "id": "/subscriptions/f5868587-4ac8-4a33-aaff-3299dfe021f4/providers/Microsoft.Web/locations/uksouth/managedApis/github"
+      },
+      "connection": {
+        "id": "/subscriptions/f5868587-4ac8-4a33-aaff-3299dfe021f4/resourceGroups/dev-rg/providers/Microsoft.Web/connections/github"
+      },
+      "connectionRuntimeUrl": "https://70c0e3bcb44fa056.05.common.logic-uksouth.azure-apihub.net/apim/github/24f11f0f49974144beb7398d93ad72ce/",
+      "authentication": {
+        "type": "Raw",
+        "scheme": "Key",
+        "parameter": "@appsetting('github-connectionKey')"
+      }
     }
   }
 }

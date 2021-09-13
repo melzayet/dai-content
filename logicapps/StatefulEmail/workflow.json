@@ -2,21 +2,19 @@
     "definition": {
         "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
         "actions": {
-            "Send_an_email_(V2)": {
+            "Create_an_issue": {
                 "type": "ApiConnection",
                 "inputs": {
                     "host": {
                         "connection": {
-                            "referenceName": "outlook"
+                            "referenceName": "github"
                         }
                     },
                     "method": "post",
                     "body": {
-                        "To": "maelzaye@microsoft.com",
-                        "Subject": "From Logic Apps",
-                        "Body": "<p>My first test from azure</p>"
+                        "title": "Hello @{triggerBody()}"
                     },
-                    "path": "/v2/Mail"
+                    "path": "/repos/@{encodeURIComponent('melzayet')}/@{encodeURIComponent('dai-content')}/issues"
                 },
                 "runAfter": {}
             }
